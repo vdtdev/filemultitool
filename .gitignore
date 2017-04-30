@@ -1,0 +1,8 @@
+# Generic .gitignore for netbeans project, e.g. github/gitignore/Global/NetBeans.gitignore
+
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.bd-gradle/
