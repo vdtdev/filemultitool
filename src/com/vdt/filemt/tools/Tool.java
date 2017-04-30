@@ -25,7 +25,7 @@ package com.vdt.filemt.tools;
 
 /**
  *
- * @author vdtdev@gmail.com
+ * @author Wade Harkins (vdtdev@gmail.com)
  */
 public class Tool {
     

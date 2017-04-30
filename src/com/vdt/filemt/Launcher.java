@@ -77,7 +77,7 @@ public class Launcher {
     }
 
     public void printBanner(){
-        System.out.printf("File Multi-Tool v%1$d.%2$dr%3$d\n");
+        System.out.printf("File Multi-Tool v%1$d.%2$dr%3$d\n", 1, 1, 0);
     }
     
     /**
