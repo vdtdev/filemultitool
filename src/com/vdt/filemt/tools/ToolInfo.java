@@ -24,12 +24,50 @@
 package com.vdt.filemt.tools;
 
 /**
- * Generic Tool
+ * Stores identifying information about a tool
  * @author Wade Harkins (vdtdev@gmail.com)
  */
-public class Tool {
+public class ToolInfo {
     
-    private ToolInfo info;
+    private String identifier = null;
+    private String name = null;
+    private String displayName = null;
     
+    /**
+     * Unique tool identifier
+     * @return String uniquely identifying tool
+     */
+    public String getId() { return this.identifier; }
+    /**
+     * Tool name
+     * @return Internal tool name
+     */
+    public String getName() { return this.name; }
+    /**
+     * Display name
+     * @return Tool display name
+     */
+    public String getDisplayName() { return this.displayName; }
+    
+    
+    /**
+     * Shorthand constructor taking id, name and display name as an array
+     * @param info Array containing id, name and display name in that order
+     */
+    public ToolInfo(String[] info){
+        this(info[0], info[1], info[2]);
+    }
+    
+    /**
+     * Constructor for ToolInfo
+     * @param id Tool identifier
+     * @param name Internal name
+     * @param displayName Display name
+     */
+    public ToolInfo(String id, String name, String displayName){
+        this.identifier = id;
+        this.name= name;
+        this.displayName = displayName;
+    }
     
 }
