@@ -58,7 +58,7 @@ public class OptionsProcessor {
         // TODO: Process CLI arguments into options map
         
         this.isProcessed = true; // indicate processing completed
-        return (this.options.keySet().size() > 0);
+        return (this.options.size() > 0);
     }
 
     /**

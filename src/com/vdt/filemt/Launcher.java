@@ -23,8 +23,10 @@
  */
 package com.vdt.filemt;
 
+import com.vdt.filemt.tools.Tool;
 import com.vdt.filemt.util.OptionsMap;
 import com.vdt.filemt.util.OptionsProcessor;
+import java.util.HashMap;
 
 /**
  *
@@ -36,6 +38,7 @@ import com.vdt.filemt.util.OptionsProcessor;
 public class Launcher {
 
     private OptionsMap options = null;
+    private HashMap<String, Tool> tools;
     
     /**
      * Static entry-point
@@ -73,11 +76,13 @@ public class Launcher {
      */
     public Launcher(OptionsMap options) {
         this.options = options;
+        this.tools = new HashMap<>();
         printBanner();
     }
 
     public void printBanner(){
-        System.out.printf("File Multi-Tool v%1$d.%2$dr%3$d\n", 1, 1, 0);
+        System.out.printf("File Multi-Tool v%1$d.%2$dr%3$d ", 1, 1, 0);
+        System.out.printf("[Tools Available: %d]\n", tools.size());
     }
     
     /**
